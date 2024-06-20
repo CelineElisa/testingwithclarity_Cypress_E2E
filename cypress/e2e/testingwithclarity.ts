@@ -60,8 +60,8 @@ When('I click on the "Clear All" button', () => {
 
 Then('I should see all the input fields empty', () => {
   testingwithclarityPage.verifyTextFieldValue('input_text1', '')
-  testingwithclarityPage.verifyTextFieldValue('input_text1', '')
-  testingwithclarityPage.verifyTextFieldValue('input_text1', '')
-  testingwithclarityPage.verifyTextFieldValue('input_text1', '')
+  testingwithclarityPage.verifyTextFieldValue('input_text2', '')
+  testingwithclarityPage.verifyTextFieldValue('input_text3', '')
+  testingwithclarityPage.verifyTextFieldValue('input_text4', '')
 })
 
