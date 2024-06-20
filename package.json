@@ -1,10 +1,13 @@
 {
-  "name": "noemie_conseil",
+  "name": "testingwithclarity_cypress_e2e",
   "version": "1.0.0",
   "description": "Cypress Technical test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run",
+    "eslint": "npx eslint '**/*.{js,ts}'",
+    "eslint:fix": "npx eslint '**/*.{js,ts}' --fix"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +16,6 @@
     "@cypress/browserify-preprocessor": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "cypress": "^10.0.0",
-    "cypress-iframe": "^1.0.1",
     "eslint": "^8.57.0",
     "typescript": "^5.4.5"
   }

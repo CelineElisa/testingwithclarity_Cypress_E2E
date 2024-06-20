@@ -3,12 +3,11 @@
       "target": "esnext",
       "moduleResolution": "node",
       "esModuleInterop": true,
-      "module": "nodenext",
+      "module": "esnext",
       "noEmit": true,
       "strict": true,
       "forceConsistentCasingInFileNames": true,
       "noFallthroughCasesInSwitch": true,
-      "resolveJsonModule": true,
       "skipLibCheck": true,
     },
   }

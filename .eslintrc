@@ -1,0 +1,34 @@
+{
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "quotes": ["error", "single"],
+      "max-len": ["error", {
+        "code": 130
+      }],
+      "indent": ["error", 2],
+      "no-console": ["warn", {
+        "allow": ["error", "info", "warn"]
+      }],
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/ban-ts-comment": "warn"
+    },
+    "settings": {
+      "import/resolver": {
+        // @xxx load tsconfig.json to eslint...
+        // thx https://github.com/benmosher/eslint-plugin-import/issues/1485#issuecomment-535351922 🙏
+        "typescript": {}
+      }
+    }
+  }
+  

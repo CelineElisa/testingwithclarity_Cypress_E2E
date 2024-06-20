@@ -1,6 +1,7 @@
-import { defineConfig } from "cypress";
-import { addCucumberPreprocessorPlugin } from "@badeball/cypress-cucumber-preprocessor";
-import { preprocessor } from "@badeball/cypress-cucumber-preprocessor/browserify";
+import { defineConfig } from 'cypress';
+import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor';
+// @ts-ignore
+import { preprocessor } from '@badeball/cypress-cucumber-preprocessor/browserify';
 
 async function setupNodeEvents(
   on: Cypress.PluginEvents,
@@ -10,9 +11,9 @@ async function setupNodeEvents(
   await addCucumberPreprocessorPlugin(on, config);
 
   on(
-    "file:preprocessor",
+    'file:preprocessor',
     preprocessor(config, {
-      typescript: require.resolve("typescript"),
+      typescript: require.resolve('typescript'),
     })
   );
 
@@ -22,8 +23,8 @@ async function setupNodeEvents(
 
 export default defineConfig({
   e2e: {
-    baseUrl: "https://duckduckgo.com",
-    specPattern: "**/*.feature",
+    baseUrl: 'https://testingwithclarity.com/ClarityTestPage/ClarityTestPage.html',
+    specPattern: '**/*.feature',
     setupNodeEvents,
   },
 });
